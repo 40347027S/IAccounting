@@ -13,7 +13,7 @@ public class Diary_Activity extends AppCompatActivity {
     private static final int ACT_PASS = 1;
     private static final int ACT_HOME = 2;
 
-    /*Handler handler = new Handler(){
+    Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
@@ -32,7 +32,7 @@ public class Diary_Activity extends AppCompatActivity {
                     break;
             }
         }
-    };*/
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class Diary_Activity extends AppCompatActivity {
         //checkStates();
     }
 
-    /*private void checkStates(){
+    private void checkStates(){
         boolean isFirstTime = SharedPrefUtil.getValue(SharedPrefUtil.GUIDE, SharedPrefUtil.VAL_FIRST, true, this);
         boolean needPw = !(SharedPrefUtil.getValue(SharedPrefUtil.GUIDE, SharedPrefUtil.VAL_PASS, "", this)).equals("");
         if(isFirstTime){
@@ -56,7 +56,7 @@ public class Diary_Activity extends AppCompatActivity {
 
 
         }
-    }*/
+    }
 
    /* private void selectGuide(){
         Intent intent = new Intent(this, GuideActivity.class);
