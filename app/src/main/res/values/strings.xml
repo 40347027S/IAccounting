@@ -1,9 +1,60 @@
 <resources>
-    <string name="app_name">IAccounting</string>
+    <string name="app_name">IAccountingTest</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_test">TestActivity</string>
+    <!--Common words-->
+    <string name="ok">OK</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="Enter">Enter</string>
+    <string name="wanning">Wanning</string>
+    <string name="bye">Bye Bye</string>
+
+    <!--In GuideFragment and corresponding xml-->
+    <string name="tv_fg_gd_pw">If you want to meet with your friend secretly, please set a password:</string>
+    <string name="et_fg_gd_pw_hint">At most 10 digits</string>
+
+    <string name="tv_fg_gd_pw_security">Please answer any security question to get back password in case (Recommend):</string>
+
+    <string name="tv_fg_gd_nm">This diary will become your best friend, would you like to give a nick name to your new friend:</string>
+    <string name="et_fg_gd_nm_hint">At most 10 letters</string>
+
+    <string name="tv_fg_gd_txt">Slide to the next page without giving secrete code.\nYou can slide back to set it before end of guide.</string>
+
+    <string name="tv_fg_gd_show_nm_yes">Now, your new friend\'s name is </string>
+    <string name="tv_fg_gd_show_nm_no">You do not set a name</string>
+    <string name="tv_fg_gd_show_pw_yes">You set a secret word to meet your friend</string>
+    <string name="tv_fg_gd_show_pw_no">You do not need secret digits to meet your friend</string>
+    <string name="tv_fg_gd_show_ensure">If you are not satisfied, you can slide back to modify.\nIf everything is ok, you can enter the room of you friend\'s</string>
+
+    <!--In PasswordActivity and corresponding xml-->
+    <string name="tv_act_pw_forget">Forget Secrete Word</string>
+
+    <string name="dia_msg">You cannot get through by this secrete word.</string>
+
+    <string name="tv_act_pw">Please enter you secrete word to unlock the door to your friend!</string>
+
+    <string name="tv_act_pw_reset">Answer question and input new secrete word. If answers are correct, the secrete word will be reset. If you have not done what question asks, please enter N//A:</string>
+
+    <string name="tv_act_pw_newps">Please enter your new secrete word:</string>
+
+
+    <!--In ResetPwActivity and corresponding xml-->
+    <string name="succ_reset">Secrete Word is reset.</string>
+    <string name="fali_reset">Answers are not correct.</string>
+
+    <string name="reset_q1">What is your last diary\'s emotion\?</string>
+    <string name="reset_q2">What is your last diary\'s weather\?</string>
+    <string name="reset_q3">What is your friends name?</string>
+    <string name="reset_q4">What is your </string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <!--Preference Settings-->
+    <string name="pref_header_sync">Backup</string>
 </resources>

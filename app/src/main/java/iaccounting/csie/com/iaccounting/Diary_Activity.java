@@ -12,6 +12,7 @@ public class Diary_Activity extends AppCompatActivity {
     private static final int ACT_GUIDE = 0;
     private static final int ACT_PASS = 1;
     private static final int ACT_HOME = 2;
+    private static final int ACT_MAIN=3;
 
     Handler handler = new Handler(){
         @Override
@@ -20,13 +21,16 @@ public class Diary_Activity extends AppCompatActivity {
 
             switch (msg.what){
                 case ACT_GUIDE:
-                    selectGuide();
+                    //selectGuide();
                     break;
                 case ACT_PASS:
-                    selectPass();
+                    //selectPass();
                     break;
                 case ACT_HOME:
                     selectHome();
+                    break;
+                case ACT_MAIN:
+                    selectMain();
                     break;
                 default:
                     break;
@@ -39,13 +43,15 @@ public class Diary_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diary_);
 
-        //checkStates();
+        checkStates();
     }
 
     private void checkStates(){
-        boolean isFirstTime = SharedPrefUtil.getValue(SharedPrefUtil.GUIDE, SharedPrefUtil.VAL_FIRST, true, this);
-        boolean needPw = !(SharedPrefUtil.getValue(SharedPrefUtil.GUIDE, SharedPrefUtil.VAL_PASS, "", this)).equals("");
-        if(isFirstTime){
+        boolean isFirstTime;
+        //boolean isFirstTime = SharedPrefUtil.getValue(SharedPrefUtil.GUIDE, SharedPrefUtil.VAL_FIRST, true, this);
+        //boolean needPw = !(SharedPrefUtil.getValue(SharedPrefUtil.GUIDE, SharedPrefUtil.VAL_PASS, "", this)).equals("");
+        handler.sendEmptyMessageDelayed(ACT_HOME, 2000);
+        /*if(isFirstTime){
             handler.sendEmptyMessageDelayed(ACT_GUIDE, 2000);
         }else{
             if(needPw){
@@ -55,7 +61,7 @@ public class Diary_Activity extends AppCompatActivity {
             }
 
 
-        }
+        }*/
     }
 
    /* private void selectGuide(){
@@ -68,11 +74,17 @@ public class Diary_Activity extends AppCompatActivity {
         Intent intent = new Intent(this, PassActivity.class);
         startActivity(intent);
         finish();
-    }
+    }*/
 
     private void selectHome(){
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
         finish();
-    }*/
+    }
+    private void selectMain(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 }
