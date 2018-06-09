@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sp_fg_gd_pw_list">
+        <item>---select one---</item>
+        <item>What is your college major?</item>
+        <item>What is your favorite color?</item>
+        <item>Do you like cat or...?</item>
+    </string-array>
+</resources>

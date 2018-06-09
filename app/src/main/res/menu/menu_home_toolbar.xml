@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_settings"
+        android:icon="@mipmap/ic_launcher"
+        android:title="settings"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/home_new"
+        android:icon="@mipmap/ic_launcher"
+        android:title="manage"
+        app:showAsAction="ifRoom" />
+</menu>
